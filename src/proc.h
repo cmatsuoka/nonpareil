@@ -65,6 +65,9 @@ typedef uint32_t bank_mask_t;   // bank bitmask
 #define MAX_MAX_BANK (sizeof (bank_mask_t) * 8)
 
 
+// workaround for conflict with system-defined type
+#define addr_t addr_t_
+
 typedef uint32_t addr_t;
 
 typedef uint16_t rom_word_t;
